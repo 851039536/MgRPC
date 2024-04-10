@@ -1,0 +1,25 @@
+﻿syntax = "proto3";//proto3 是 Protocol Buffers 的第三个版本
+
+// 指定了生成的 C# 代码的命名空间为 LinkService。当使用 protobuf 编译器 (protoc) 将这个 .proto 文件转换为 C# 代码时，生成的类将位于 LinkService 命名空间中
+option csharp_namespace = "LinkService";
+
+//定义了一个名为 Link 的 gRPC 服务。在 gRPC 中，服务是由一个或多个 RPC 方法组成的
+service Link
+{
+	//定义了一个 RPC 方法。这个方法名为 GetMessage，它接受一个 Mes 类型的消息作为参数，
+	//并返回一个 Mes 类型的消息。在 gRPC 中，客户端可以调用这个方法，并发送一个 Mes 消息给服务端，然后服务端会处理这个消息并返回一个 Mes 消息给客户端。
+	rpc GetMessage(Mes) returns (Mes);
+
+}
+
+//定义了一个名为 Mes 的消息类型。在 protobuf 中，消息是由一系列字段组成的，每个字段都有一个名称、一个类型和一个标识符。
+message Mes
+{
+    // 客户端发送
+	// 定义了一个名为 StrRequest 的字段，类型为 string，标识符为 1。这个标识符在消息内部是唯一的，并且一旦分配就不能更改，因为它被用于序列化和反序列化过程中的字段识别。
+	string StrRequest = 1;
+	// 同样定义了一个名为 StrReply 的字段，类型为 string，标识符为 2。(服务端回复)
+	string StrReply = 2;
+}
+
+

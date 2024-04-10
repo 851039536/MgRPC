@@ -1,0 +1,52 @@
+﻿// Protocol Buffers 语法版本 proto3 版本
+syntax = "proto3";
+// 定义了消息类型和服务的包名，类似于命名空间，用于避免命名冲突。
+package Calculator;
+// 定义了一个 gRPC 服务。在大括号中，您可以列出服务方法的定义。
+service CalculatorService 
+{
+    // 定义了一个服务方法。rpc 表示定义一个远程过程调用（RPC）方法。MyMethod 是方法的名称，MyRequest 是输入参数类型，MyResponse 是输出参数类型。
+    rpc MyMethod (MyRequest) returns (MyResponse);
+
+  // 服务器流式方法
+  rpc ServerStreamingMethod(Request1) returns (stream Response1);
+
+  // 客户端流式方法
+  rpc ClientStreamingMethod(stream Request2) returns (Response2);
+
+  // 双向流式方法
+  rpc BidirectionalStreamingMethod(stream Request3) returns (stream Response3);
+}
+message MyRequest 
+{
+    repeated int32 num = 10;
+}
+message MyResponse 
+{
+    repeated string strs = 10;
+}
+
+message Request1
+{
+    string Message = 1;
+}
+message Response1
+{
+    string Message = 1;
+}
+message Request2
+{
+    string Message = 1;
+}
+message Response2
+{
+    string Message = 1;
+}
+message Request3
+{
+    string Message = 1;
+}
+message Response3
+{
+    string Message = 1;
+}
