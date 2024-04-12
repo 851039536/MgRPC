@@ -1,0 +1,15 @@
+﻿syntax = "proto3";  
+  
+option csharp_namespace = "FileService";  
+  
+service FileService {  
+  rpc SendFileContent (FileRequest) returns (stream FileResponse); // 使用流式响应  
+}  
+  
+message FileRequest {  
+  string filename = 1;  
+}  
+  
+message FileResponse {  
+  bytes content = 1;  
+}

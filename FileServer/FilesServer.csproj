@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4797AAE3-DE4F-4078-8C59-33A4FC286949}</ProjectGuid>
+    <ProjectGuid>{AEDC5CE7-AFCC-4C88-8148-65F1BD04CC23}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CalculatorCilent</RootNamespace>
-    <AssemblyName>CalculatorCilent</AssemblyName>
+    <RootNamespace>FileServer</RootNamespace>
+    <AssemblyName>FileServer</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -67,6 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileServiceImpl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -76,7 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GrpcConfig\GrpcConfig.csproj">
-      <Project>{a2f7933a-9b9a-48bd-bfca-a0c2a881fb18}</Project>
+      <Project>{A2F7933A-9B9A-48BD-BFCA-A0C2A881FB18}</Project>
       <Name>GrpcConfig</Name>
     </ProjectReference>
   </ItemGroup>

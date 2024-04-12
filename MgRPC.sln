@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34707.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MgRPC", "MgRPC\MgRPC.csproj", "{658AFC00-ABE1-4284-BF16-71B59D27D673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcLink", "GrpcLink\GrpcLink.csproj", "{A2F7933A-9B9A-48BD-BFCA-A0C2A881FB18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcConfig", "GrpcConfig\GrpcConfig.csproj", "{A2F7933A-9B9A-48BD-BFCA-A0C2A881FB18}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkServer", "TestServer\LinkServer.csproj", "{8C36B99D-372C-4E60-BEDF-AC1EC8C9948A}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorServer", "CalculatorServer\CalculatorServer.csproj", "{2DEA6D5C-18D0-4878-A66B-386634EFC1B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorCilent", "CalculatorCilent\CalculatorCilent.csproj", "{4797AAE3-DE4F-4078-8C59-33A4FC286949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilesServer", "FileServer\FilesServer.csproj", "{AEDC5CE7-AFCC-4C88-8148-65F1BD04CC23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilesCilent", "FilesCilent\FilesCilent.csproj", "{06A7980B-BDCF-43E2-8F3C-1E5C0883B580}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{4797AAE3-DE4F-4078-8C59-33A4FC286949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4797AAE3-DE4F-4078-8C59-33A4FC286949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4797AAE3-DE4F-4078-8C59-33A4FC286949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEDC5CE7-AFCC-4C88-8148-65F1BD04CC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDC5CE7-AFCC-4C88-8148-65F1BD04CC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDC5CE7-AFCC-4C88-8148-65F1BD04CC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDC5CE7-AFCC-4C88-8148-65F1BD04CC23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A7980B-BDCF-43E2-8F3C-1E5C0883B580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A7980B-BDCF-43E2-8F3C-1E5C0883B580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A7980B-BDCF-43E2-8F3C-1E5C0883B580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A7980B-BDCF-43E2-8F3C-1E5C0883B580}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

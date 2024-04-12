@@ -76,9 +76,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GrpcLink\GrpcLink.csproj">
-      <Project>{A2F7933A-9B9A-48BD-BFCA-A0C2A881FB18}</Project>
-      <Name>GrpcLink</Name>
+    <ProjectReference Include="..\GrpcConfig\GrpcConfig.csproj">
+      <Project>{a2f7933a-9b9a-48bd-bfca-a0c2a881fb18}</Project>
+      <Name>GrpcConfig</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
